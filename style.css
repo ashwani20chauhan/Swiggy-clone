@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #02060c;
+}
+
+.hero-section {
+  background-color: #ff5200;
+  color: white;
+  padding: 20px 40px 80px 40px;
+  position: relative;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 45px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.btn-app {
+  border: 1px solid white;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+.btn-signin {
+  background-color: #000000;
+  padding: 10px 24px;
+  border-radius: 12px;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 60px auto 40px auto;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 35px;
+}
+
+.search-container {
+  display: flex;
+  gap: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.location-box {
+  flex: 1;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  color: #686b78;
+}
+
+.location-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.search-box {
+  flex: 1.5;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  color: #686b78;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.service-cards {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  transform: translateY(40px);
+}
+
+.card {
+  background-color: white;
+  color: #02060c;
+  border-radius: 24px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card-text h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.card-text p {
+  font-size: 12px;
+  color: #686b78;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.offer {
+  display: inline-block;
+  color: #ff5200;
+  font-weight: 800;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  background-color: #ff5200;
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.main-container {
+  max-width: 1100px;
+  margin: 80px auto 40px auto;
+  padding: 0 20px;
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-header h2 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.scroll-btns button {
+  background-color: #e2e2e7;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cat-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.cat-card span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #414449;
+}
+
+.dineout-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.rest-card {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #e2e2e7;
+}
+
+.rest-img {
+  position: relative;
+  height: 180px;
+}
+
+.rest-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rating {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.rest-name-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+}
+
+.rest-details {
+  padding: 12px;
+}
+
+.cuisines, .price {
+  font-size: 12px;
+  color: #686b78;
+  margin-bottom: 4px;
+}
+
+.tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 8px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.green-tag {
+  background-color: #1b8a5a;
+  color: white;
+}
+
+.bank-tag {
+  background-color: #c8f3e1;
+  color: #0d5234;
+}
+
+.banner-app {
+  background-color: #02060c;
+  color: white;
+  border-radius: 20px;
+  padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.app-logo img {
+  height: 30px;
+}
+
+.app-logo span {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ff5200;
+}
+
+.app-banner-content h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.app-banner-content p {
+  color: #93959f;
+  margin-top: 6px;
+}
+
+.qr-box {
+  background-color: white;
+  color: black;
+  padding: 16px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-icon {
+  font-size: 60px;
+}
+
+.qr-box span {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.cities-section h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.cities-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.cities-grid button {
+  background-color: white;
+  border: 1px solid #e2e2e7;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #414449;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #f0f0f5;
+  padding: 50px 0 20px 0;
+  margin-top: 60px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.footer-logo img {
+  height: 30px;
+}
+
+.footer-logo span {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ff5200;
+}
+
+.brand-col p {
+  color: #686b78;
+  font-size: 13px;
+}
+
+.footer-col h4 {
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #686b78;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #686b78;
+}
+
+.social-head {
+  margin-top: 20px;
+}
+
+.social-icons i {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #686b78;
+}
+
+.app-download-bar {
+  max-width: 1100px;
+  margin: 40px auto 0 auto;
+  padding: 20px;
+  border-top: 1px solid #e2e2e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+}
+
+.store-buttons button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #02060c;
+  background: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+@media (max-width: 1024px) {
+  .service-cards {
+    grid-template-columns: 1fr;
+    transform: none;
+    margin-top: 30px;
+  }
+
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dineout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 20px;
+  }
+
+  .nav-links a:not(.btn-signin) {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 26px;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .banner-app {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .app-download-bar {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
